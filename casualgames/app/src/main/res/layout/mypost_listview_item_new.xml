@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <!--<View
+        android:id="@+id/my_duang_above_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/above_shadow" />-->
+    <RelativeLayout
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+           >
+
+          <com.weile.casualgames.find.view.UserInfoItemView
+                android:id="@+id/user_info_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                ></com.weile.casualgames.find.view.UserInfoItemView>
+
+            <LinearLayout
+                android:id="@+id/contentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/mp_lv_item_content_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="@color/main_bottom_text_normal_bg"
+                    android:textSize="@dimen/text_size_12"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginBottom="13dp"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/photosLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp">
+                    <GridView
+                        android:id="@+id/gvPhotos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"
+                        android:numColumns="1"
+                        android:horizontalSpacing="5dp"
+                        android:listSelector="@color/white"
+                        >
+                    </GridView>
+
+                </RelativeLayout>
+<!--
+                <View
+                    style="@style/underline_style"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="6dp" />-->
+                <com.weile.casualgames.find.view.MainBodyBottomView
+                    android:id="@+id/main_body_bottom_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    </com.weile.casualgames.find.view.MainBodyBottomView>
+
+                <!--<View-->
+                <!--style="@style/underline_style"-->
+                <!--android:layout_above="@id/my_duang_card_bottom_rl"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_marginRight="8dp" />-->
+                <!--<View
+                    android:id="@+id/my_duang_header_below_shadow"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_below="@id/my_duang_card"
+                    android:background="@drawable/below_shadow" />-->
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <View
+            android:id="@+id/my_duang_header_line"
+            style="@style/underline_style"
+            android:layout_below="@id/layout_content"
+            />
+</RelativeLayout>
+</RelativeLayout>

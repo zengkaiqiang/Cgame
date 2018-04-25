@@ -1,0 +1,258 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <!--<View-->
+        <!--android:id="@+id/my_duang_above_shadow"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:background="@drawable/above_shadow" />-->
+    <RelativeLayout
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+       <!--<include
+           android:id="@+id/prasieView"
+           layout="@layout/praise_view"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           ></include>-->
+<!--        <PraiseView
+            android:id="@+id/praiseView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"></PraiseView>-->
+    <RelativeLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        >
+    <!--android:layout_below="@id/my_duang_above_shadow"-->
+
+        <!--<include
+            android:id="@+id/user_info_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            layout="@layout/user_info_item_view"></include>-->
+
+       <com.weile.casualgames.find.view.UserInfoItemView
+            android:id="@+id/user_info_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            />
+
+
+        <!--<TextView
+            android:id="@+id/mp_lv_item_top_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/user_info_item"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/text_view_border_shape"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_body_time"
+            android:visibility="gone" />-->
+       <!-- <TextView
+            android:id="@+id/tvNickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/nickname_text_color_yellow"
+            android:textSize="@dimen/main_body_reply"
+            android:text="小文">
+        </TextView>
+        <ImageView
+            android:id="@+id/imgGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/tvNickName"
+            android:layout_marginTop="3dp"/>
+
+        <TextView
+            android:id="@+id/tvSignature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/user_signature_text_color"
+            android:textSize="@dimen/user_signature_text_size"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxLength="20"
+            android:layout_below="@id/tvNickName"
+            android:layout_marginTop="5dp"
+            android:visibility="gone" />-->
+
+        <TextView
+            android:id="@+id/mp_lv_item_content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/user_info_item"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@color/main_bottom_text_normal_bg"
+            android:textSize="@dimen/text_size_12"
+            android:layout_marginTop="9dp"
+            android:text="今天不一样的开始！"/>
+
+        <!--<LinearLayout
+            android:id="@+id/mp_lv_item_center_address_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_main_title_location" />
+
+            <TextView
+                android:id="@+id/mp_lv_item_center_address_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:textColor="@color/main_title_location_text"
+                android:textSize="@dimen/main_body_time"
+                />
+        </LinearLayout>-->
+
+        <!--<View
+            android:id="@+id/my_duang_card_line"
+            style="@style/underline_style"
+            android:layout_below="@id/mp_lv_item_content_tv"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="24dp" />-->
+
+        <com.weile.casualgames.find.view.MainBodyBottomView
+            android:id="@+id/main_body_bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/mp_lv_item_content_tv">
+        </com.weile.casualgames.find.view.MainBodyBottomView>
+        <!--<LinearLayout
+            android:id="@+id/my_duang_card_bottom_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_duang_card_line"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/mp_lv_item_viewnum_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/my_mailbox_empty_textcolor"
+                    android:textSize="@dimen/main_body_time" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp">
+
+                <TextView
+                    android:id="@+id/mp_lv_item_commentnum_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/my_mailbox_empty_textcolor"
+                    android:textSize="@dimen/main_body_time" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+
+                <TextView
+                    android:id="@+id/mp_lv_item_spreadnum_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="3dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/my_mailbox_empty_textcolor"
+                    android:textSize="@dimen/main_body_time" />
+
+                &lt;!&ndash;<ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/mp_lv_item_spreadnum_tv"
+                    android:src="@drawable/topic_detail_duang_img"
+                    android:visibility="gone" />&ndash;&gt;
+            </RelativeLayout>
+        </LinearLayout>-->
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/my_duang_header_line_t"
+        style="@style/underline_style"
+        android:layout_below="@id/layout_content"
+         />
+
+    <!--<View
+        android:id="@+id/my_duang_header_below_shadow_t"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/my_duang_card"
+        android:background="@drawable/below_shadow" />-->
+
+    <!--<LinearLayout
+        android:id="@+id/my_duang_header_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_duang_header_below_shadow_t"
+        android:background="@color/app_bg_color"
+        android:orientation="vertical"
+        android:visibility="gone">-->
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/my_duang_card"
+            android:background="@drawable/below_shadow" />-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="13dp" />-->
+    <!--</LinearLayout>-->
+
+    </RelativeLayout>
+</RelativeLayout>

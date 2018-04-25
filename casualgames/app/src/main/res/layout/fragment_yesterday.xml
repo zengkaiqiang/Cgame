@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.weile.casualgames.game.YesterdayFragment"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/space_15">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="@dimen/space_240"
+                android:layout_height="@dimen/space_250"
+                android:background="@mipmap/ic_rank_first_photo">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:src="@mipmap/ic_rank_yesterday_first"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/tv_first_flowers_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="123456"
+                    android:textColor="@color/game_user_vip_text"
+                    android:textSize="@dimen/text_size_12"
+                    android:background="@mipmap/bg_rank_yestoday_flower"
+                    android:textAlignment="center"></TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/space_5">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No1."
+                        android:textColor="@color/game_user_vip_text"
+                        android:textSize="@dimen/text_size_14"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="阿扎阿扎"
+                        android:textColor="@color/game_user_vip_text"
+                        android:textSize="@dimen/text_size_14"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/space_125"
+                    android:layout_height="@dimen/space_250"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/space_125"
+                        android:layout_height="@dimen/space_125"
+                        android:background="@mipmap/ic_rank_first_photo">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:src="@mipmap/ic_rank_yesterday_second"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerHorizontal="true">
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/tv_second_flowers_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="123256"
+                            android:textColor="@color/game_user_vip_text"
+                            android:textSize="@dimen/text_size_12"
+                            android:background="@mipmap/bg_rank_yestoday_flower"
+                            android:textAlignment="center"></TextView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/space_5">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No2."
+                                android:textColor="@color/game_user_vip_text"
+                                android:textSize="@dimen/text_size_14"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="糖糖KILLY"
+                                android:textColor="@color/game_user_vip_text"
+                                android:textSize="@dimen/text_size_14"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/space_125"
+                        android:layout_height="@dimen/space_125"
+                        android:background="@mipmap/ic_rank_first_photo">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:src="@mipmap/ic_rank_yesterday_thrid"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerHorizontal="true">
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/tv_third_flowers_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="123256"
+                            android:textColor="@color/game_user_vip_text"
+                            android:textSize="@dimen/text_size_12"
+                            android:background="@mipmap/bg_rank_yestoday_flower"
+                            android:textAlignment="center"></TextView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/space_5">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No3."
+                                android:textColor="@color/game_user_vip_text"
+                                android:textSize="@dimen/text_size_14"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="仙女本仙"
+                                android:textColor="@color/game_user_vip_text"
+                                android:textSize="@dimen/text_size_14"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+</LinearLayout>
+
+            <com.weile.casualgames.view.widget.NoScrollGridView
+                android:id="@+id/gvYesterdayRank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                android:divider="@null">
+            </com.weile.casualgames.view.widget.NoScrollGridView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

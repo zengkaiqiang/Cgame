@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/net_error_toast_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@drawable/shape_dialog_game_matching_title_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="@string/matching_game_matching_dialog_title"
+            android:textColor="@color/pickerview_topbar_title"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:singleLine="true"
+            android:text="关闭"
+            android:textColor="@color/main_title_location_text"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_25"
+        android:layout_marginRight="@dimen/space_25"
+        android:layout_marginTop="@dimen/space_25"
+        android:layout_below="@id/rl_title">
+
+        <TextView
+        android:id="@+id/tv_random"
+        android:layout_width="@dimen/space_240"
+        android:layout_height="@dimen/space_45"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:text="@string/matching_game_random_matching"
+        android:textColor="@color/game_user_vip_text"
+        android:textSize="@dimen/text_size_18"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:background="@drawable/shape_matching_random_matching_text_bg" />
+
+        <TextView
+            android:id="@+id/tv_filter"
+            android:layout_width="@dimen/space_240"
+            android:layout_height="@dimen/space_45"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_random"
+            android:layout_marginTop="@dimen/space_25"
+            android:layout_marginBottom="@dimen/space_25"
+            android:singleLine="true"
+            android:text="@string/matching_game_filter_matching"
+            android:textColor="@color/game_user_vip_text"
+            android:textSize="@dimen/text_size_18"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/shape_matching_filter_matching_text_bg" />
+    </RelativeLayout>
+
+</RelativeLayout>

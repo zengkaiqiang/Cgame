@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <com.weile.casualgames.view.widget.RoundImageView
+        android:id="@+id/iv_recommend_player_header"
+        android:layout_width="@dimen/space_50"
+        android:layout_height="@dimen/space_50"
+        android:focusable="false"
+        android:src="@mipmap/ic_default_avatar">
+    </com.weile.casualgames.view.widget.RoundImageView>
+
+    <TextView
+        android:id="@+id/tv_recommend_player_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="微微安"
+        android:textSize="@dimen/text_size_13"
+        android:textColor="@color/main_bottom_text_normal_bg"
+        android:layout_marginTop="@dimen/space_6"
+        >
+    </TextView>
+
+</LinearLayout>

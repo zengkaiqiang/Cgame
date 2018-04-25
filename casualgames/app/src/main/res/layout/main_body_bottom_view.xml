@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+<!--<LinearLayout
+    android:id="@+id/location_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/ic_location_bg">
+   <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/ic_location_tag"/>
+    <TextView
+        android:id="@+id/location_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/location_info_text_color"
+        android:textSize="@dimen/user_signature_text_size"
+        android:text="厦门市思明区"
+        />
+
+    </LinearLayout>-->
+
+<!--<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_marginTop="10dp">-->
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="8dp">
+
+    <!--android:layout_marginBottom="10dp"
+    <TextView
+        android:id="@+id/browser_count_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/user_signature_text_color"
+        android:textSize="@dimen/user_signature_text_size"/>-->
+
+    <!--<ImageView
+        android:id="@+id/imgRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_see"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/commentLayout"
+        android:layout_marginLeft="8dp"
+        android:visibility="gone">
+    </ImageView>
+    <TextView
+        android:id="@+id/spread_count_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/user_signature_text_color"
+        android:textSize="@dimen/user_signature_text_size"
+        android:text="12"
+        android:layout_toRightOf="@id/imgRead"
+        android:layout_marginLeft="3dp"
+        android:visibility="gone"/>-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true">
+    <TextView
+        android:id="@+id/tvCreateAtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/user_signature_text_color"
+        android:textSize="@dimen/text_size_11"
+        android:layout_marginRight="8dp" />
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tvCreateAtTime"
+            android:textColor="@color/user_signature_text_color"
+            android:textSize="@dimen/text_size_12" />
+        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/commentLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@+id/imgComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_comment"
+            android:layout_centerVertical="true">
+        </ImageView>
+        <TextView
+            android:id="@+id/tvCommentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imgComment"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/user_signature_text_color"
+            android:textSize="@dimen/text_size_12"
+            android:text="15"/>
+    </RelativeLayout>
+
+
+     <!--   <ImageView
+            android:id="@+id/imgGood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_good_new"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/spread_time_text_view"
+            android:layout_marginLeft="5dp"></ImageView>
+        <ImageView
+            android:id="@+id/imgBad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_bad_new"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imgGood"
+            android:layout_marginLeft="5dp">
+        </ImageView>-->
+
+</RelativeLayout>
+
+<!--<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp">
+
+    <TextView
+        android:id="@+id/mp_lv_item_commentnum_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="3dp"
+        android:textColor="@color/my_mailbox_empty_textcolor"
+        android:textSize="@dimen/main_body_time"
+        android:text="77评论"/>
+</RelativeLayout>-->
+
+<!--</LinearLayout>-->
+
+
+</RelativeLayout>

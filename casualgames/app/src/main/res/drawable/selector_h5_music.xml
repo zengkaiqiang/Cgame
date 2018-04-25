@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android"  xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_enabled="true" android:state_pressed="true" android:drawable="@mipmap/h5_music_btn_pressed" />
+    <item android:state_enabled="true" android:state_checked="true" android:drawable="@mipmap/h5_music_btn_pressed" />
+    <item android:state_enabled="true" android:state_selected="true" android:drawable="@mipmap/h5_music_btn_pressed" />
+    <item android:drawable="@mipmap/h5_music_btn_normal"/>
+</selector>

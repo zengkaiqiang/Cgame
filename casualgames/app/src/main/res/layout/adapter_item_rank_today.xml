@@ -1,0 +1,134 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/topic_detail_reply"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_55"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginRight="@dimen/space_15">
+
+        <TextView
+            android:id="@+id/tv_ranking_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/game_user_name_text"
+            android:textSize="@dimen/text_size_16"
+            android:text="4"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_user_header"
+            android:layout_width="@dimen/space_40"
+            android:layout_height="@dimen/space_40"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_ranking_num"
+            android:layout_marginLeft="@dimen/space_22">
+            <com.weile.casualgames.view.widget.RoundImageView
+                android:id="@+id/iv_user_header"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="@dimen/space_40"
+                android:src="@mipmap/ic_default_avatar"
+                android:layout_centerVertical="true"/>
+           <!-- <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true">
+                <ImageView
+                    android:id="@+id/authentication_imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    />
+            </FrameLayout>-->
+
+        </RelativeLayout>
+
+        <!--<LinearLayout
+            android:id="@+id/reply_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_toRightOf="@+id/user_header_layout"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_user_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/game_user_name_text"
+                    android:textSize="@dimen/text_size_16"
+                    android:text="Mark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:layout_toRightOf="@id/tv_user_nickname"
+                    android:background="@mipmap/bg_vip"
+                    android:text="Lv.6"
+                    android:textAlignment="center"
+                    android:textColor="@color/game_user_vip_text"
+                    android:textSize="@dimen/text_size_12" />
+            </RelativeLayout>
+
+        </LinearLayout>-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rl_user_header"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_10">
+            <TextView
+                android:id="@+id/tv_user_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/game_user_name_text"
+                android:textSize="@dimen/text_size_16"
+                android:text="Mark"/>
+
+            <TextView
+                android:id="@+id/tv_player_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_5"
+                android:layout_toRightOf="@id/tv_user_nickname"
+                android:background="@mipmap/bg_vip"
+                android:text="Lv.6"
+                android:textAlignment="center"
+                android:textColor="@color/game_user_vip_text"
+                android:textSize="@dimen/text_size_12" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_flowers_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/rank_today_leave_flowers"
+            android:text="99865"
+            />
+    </RelativeLayout>
+
+    <View
+        style="@style/divider_line"
+        android:layout_below="@id/topic_detail_reply"
+        android:layout_marginLeft="@dimen/space_90"
+        android:layout_marginRight="@dimen/space_10"/>
+
+</RelativeLayout>

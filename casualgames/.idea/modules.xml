@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/casualgames.iml" filepath="$PROJECT_DIR$/casualgames.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/social_sdk_library_project/social_sdk_library_project.iml" filepath="$PROJECT_DIR$/social_sdk_library_project/social_sdk_library_project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/temporary_loadimage_library/temporary_loadimage_library.iml" filepath="$PROJECT_DIR$/temporary_loadimage_library/temporary_loadimage_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/temporary_network_library/temporary_network_library.iml" filepath="$PROJECT_DIR$/temporary_network_library/temporary_network_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/temporary_tabs_library/temporary_tabs_library.iml" filepath="$PROJECT_DIR$/temporary_tabs_library/temporary_tabs_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webservice/webservice.iml" filepath="$PROJECT_DIR$/webservice/webservice.iml" />
+    </modules>
+  </component>
+</project>

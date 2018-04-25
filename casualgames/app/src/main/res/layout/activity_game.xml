@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/game_user_vip_text"
+    tools:context="com.weile.casualgames.game.GameActivity">
+
+    <TextView
+        android:id="@+id/tv_matching_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_40"
+        android:text="@string/matching_player_matching_tips"
+        android:textColor="@color/game_user_name_text"
+        android:textSize="@dimen/text_size_17"></TextView>
+
+    <LinearLayout
+        android:id="@+id/ll_my"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_120"
+        android:orientation="vertical">
+
+        <com.weile.casualgames.view.widget.RoundImageView
+            android:layout_width="@dimen/space_100"
+            android:layout_height="@dimen/space_100"
+            android:background="@mipmap/ic_default_avatar" />
+
+        <TextView
+            android:id="@+id/tv_myName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_10"
+            android:text="风中的野百合"
+            android:textAlignment="center"
+            android:textColor="@color/game_user_name_text"
+            android:textSize="@dimen/text_size_14"></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_matching_cancel"
+        android:layout_width="@dimen/space_150"
+        android:layout_height="@dimen/space_40"
+        android:layout_below="@id/ll_my"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_30"
+        android:background="@drawable/shape_game_player_matching_cancel_bg"
+        android:gravity="center"
+        android:text="@string/pickerview_cancel"
+        android:textColor="@color/main_title_location_text"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/tv_waiting_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_matching_cancel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_10"
+        android:text="预计等待时间18s"
+        android:textColor="@color/main_bottom_text_normal_bg"
+        android:textSize="@dimen/text_size_14" />
+
+    <RelativeLayout
+        android:id="@+id/rl_game_matching"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_matching_tips"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_game_name"
+            android:layout_width="@dimen/space_72"
+            android:layout_height="@dimen/space_35"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_10"
+            android:background="@drawable/shape_game_matching_game_name_bg"
+            android:gravity="center"
+            android:text="斗兽棋"
+            android:textColor="@color/main_bottom_text_normal_bg"
+            android:textSize="@dimen/text_size_14" />
+
+        <LinearLayout
+            android:id="@+id/ll_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_game_name"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_my2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_170"
+                android:orientation="vertical">
+
+                <com.weile.casualgames.view.widget.RoundImageView
+                    android:layout_width="@dimen/space_100"
+                    android:layout_height="@dimen/space_100"
+                    android:background="@mipmap/ic_default_avatar" />
+
+                <TextView
+                    android:id="@+id/tv_my_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:text="风中的野百合"
+                    android:textAlignment="center"
+                    android:textColor="@color/game_user_name_text"
+                    android:textSize="@dimen/text_size_14"></TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_185"
+                android:src="@mipmap/ic_matching_vs"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_170"
+                android:layout_toRightOf="@id/ll_my2"
+                android:orientation="vertical">
+
+                <com.weile.casualgames.view.widget.RoundImageView
+                    android:layout_width="@dimen/space_100"
+                    android:layout_height="@dimen/space_100"
+                    android:background="@mipmap/ic_default_avatar" />
+
+                <TextView
+                    android:id="@+id/tv_other_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:text="王豆豆"
+                    android:textAlignment="center"
+                    android:textColor="@color/game_user_name_text"
+                    android:textSize="@dimen/text_size_14"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_find_tips"
+            android:layout_width="@dimen/space_250"
+            android:layout_height="@dimen/space_35"
+            android:layout_below="@id/ll_find"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_20"
+            android:background="@drawable/shape_game_matching_find_bg"
+            android:gravity="center"
+            android:text="发现一个和你年龄相仿的萌妹子"
+            android:textColor="@color/matching_game_find_text"
+            android:textSize="@dimen/text_size_14"></TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,1 @@
+include ':app', ':webservice', ':social_sdk_library_project', ':common', ':temporary_network_library', ':temporary_tabs_library', ':temporary_tabs_library', ':temporary_loadimage_library'

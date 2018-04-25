@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <!--<script type="text/javascript" src="../js/jquery-1.7.2.min.js" ></script>-->
+  </head>
+  <style type="text/css">
+    span{
+      display: block;
+      padding-right:10px;
+    }
+  </style>
+  <body>
+    <!--<button onclick="ceshi()">js调用安卓</button>-->
+    <!--<button onclick="clickMicrophoneBtn(121212)">安卓调用js</button>-->
+    <span id="spa"></span>
+  </body>
+  <script type="text/javascript">
+    function clickExitBtn(sta){
+      document.getElementById("spa").innerHTML="clickExitBtn==>"+sta;
+//      window.location.href="jump.html?sta="+sta;
+    }
+    function clickMicrophoneBtn(sta){
+      document.getElementById("spa").innerHTML="clickMicrophoneBtn==>"+sta;
+//      window.location.href="jump.html?sta="+sta;
+    }
+    function clickVoiceBtn(sta){
+      document.getElementById("spa").innerHTML="clickVoiceBtn==>"+sta;
+//      window.location.href="jump.html?sta="+sta;
+    }
+    function clickBackGroundMusicBtn(sta){
+      document.getElementById("spa").innerHTML="clickBackGroundMusicBtn==>"+sta;
+//      window.location.href="jump.html?sta="+sta;
+    }
+
+//    function ceshi(){
+//      cgames.AddFrind(1,0);
+//    }
+//    function clickMicrophoneBtn(sta){
+//      window.location.href="jump.html";
+//    }
+  </script>
+</html>

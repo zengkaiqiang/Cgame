@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.weile.casualgames.game.TodayFragment"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="@dimen/space_30"
+                        android:layout_marginLeft="@dimen/space_40">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_rank_today_second">
+                    <com.weile.casualgames.view.widget.RoundImageView
+                        android:id="@+id/iv_user_header"
+                        android:layout_width="@dimen/space_56"
+                        android:layout_height="@dimen/space_56"
+                        android:src="@mipmap/ic_default_avatar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/space_25"/>
+                </RelativeLayout>
+                        <TextView
+                            android:id="@+id/tv_second_name"
+                            style="@style/rank_top_three_name"
+                            android:text="双子座双子星"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/bg_vip"
+                            android:text="Lv.6"
+                            android:textAlignment="center"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:textColor="@color/game_user_vip_text"
+                            android:textSize="@dimen/text_size_16"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="113456"
+                            android:textAlignment="center"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:textColor="@color/rank_today_flowers"
+                            android:textSize="@dimen/text_size_16"/>
+            </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/space_20">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/ic_rank_today_first">
+                            <com.weile.casualgames.view.widget.RoundImageView
+                                android:id="@+id/iv_first_player_header"
+                                android:layout_width="@dimen/space_65"
+                                android:layout_height="@dimen/space_65"
+                                android:src="@mipmap/ic_default_avatar"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/space_27"/>
+                        </RelativeLayout>
+                        <TextView
+                            android:id="@+id/tv_first_name"
+                            style="@style/rank_top_three_name"
+                            android:text="风中野百合"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/bg_vip"
+                            android:text="Lv.6"
+                            android:textAlignment="center"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:textColor="@color/game_user_vip_text"
+                            android:textSize="@dimen/text_size_16"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="123456"
+                            android:textAlignment="center"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:textColor="@color/rank_today_flowers"
+                            android:textSize="@dimen/text_size_16"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/space_30"
+                        android:layout_marginRight="@dimen/space_40">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/ic_rank_today_third">
+                            <com.weile.casualgames.view.widget.RoundImageView
+                                android:id="@+id/iv_three_player_header"
+                                android:layout_width="@dimen/space_56"
+                                android:layout_height="@dimen/space_56"
+                                android:src="@mipmap/ic_default_avatar"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/space_25"/>
+                        </RelativeLayout>
+                        <TextView
+                            android:id="@+id/tv_third_name"
+                            style="@style/rank_top_three_name"
+                            android:text="Mike"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/bg_vip"
+                            android:text="Lv.6"
+                            android:textAlignment="center"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:textColor="@color/game_user_vip_text"
+                            android:textSize="@dimen/text_size_16"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="103456"
+                            android:textAlignment="center"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:textColor="@color/rank_today_flowers"
+                            android:textSize="@dimen/text_size_16"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            <ListView
+                android:id="@+id/lvTodayRank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/space_20"
+                android:divider="@null"
+                android:background="@drawable/shape_rank_today_listview_bg"></ListView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

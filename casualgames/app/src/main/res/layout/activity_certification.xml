@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/space_50">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="60dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_15"
+                android:src="@mipmap/login_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/setting_certification_title"
+            android:textColor="@color/common_333333"
+            android:textSize="@dimen/space_18" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/iv_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_15"
+                android:text="@string/userinfo_edit_submit"
+                android:textColor="@color/common_666666"
+                android:textSize="@dimen/space_16" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/divider_gradient_line"
+        android:layout_marginTop="@dimen/space_50" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_51"
+
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_certification_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_60"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_marginRight="@dimen/space_15">
+
+            <TextView
+                style="@style/userinfo_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/setting_certification_name" />
+
+            <EditText
+                android:id="@+id/et_certification_name"
+                style="@style/userinfo_content_text_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_15"
+                android:background="@null"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center_vertical|right"
+                android:hint="@string/setting_certification_name2"
+                android:maxWidth="@dimen/space_200"
+                android:singleLine="true" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/divider_line"
+            android:layout_marginLeft="@dimen/space_15" />
+
+        <RelativeLayout
+            android:id="@+id/rl_certification_id_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_60"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_marginRight="@dimen/space_15">
+
+            <TextView
+                style="@style/userinfo_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/setting_certification_id_number" />
+
+            <EditText
+                android:id="@+id/et_certification_id_number"
+                style="@style/userinfo_content_text_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_15"
+                android:background="@null"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center_vertical|right"
+                android:hint="@string/setting_certification_id_number2"
+                android:maxWidth="@dimen/space_200"
+                android:singleLine="true" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/divider_line"
+            android:layout_marginLeft="@dimen/space_15" />
+
+
+        <TextView
+            android:id="@+id/tv_certification_authentication"
+            android:layout_width="@dimen/space_260"
+            android:layout_height="@dimen/space_40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_30"
+            android:background="@drawable/shape_fillet_bg"
+            android:gravity="center"
+            android:text="@string/setting_certification_authentication"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_18" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

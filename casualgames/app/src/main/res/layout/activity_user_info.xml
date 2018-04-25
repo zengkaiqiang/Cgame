@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <!--以上为图片背景的所有控件 -->
+    <com.weile.casualgames.view.widget.DropZoomScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:maxHeight="@dimen/space_210"
+                android:scaleType="fitXY"
+                android:src="@mipmap/userinfo_bg_top" />
+
+            <include
+                android:id="@+id/pieces_userinfo_mine"
+                layout="@layout/pieces_userinfo_mine" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/userinfo_dynamic"
+                    android:textColor="@color/common_333333"
+                    android:textSize="@dimen/space_16" />
+
+                <TextView
+                    android:id="@+id/tv_userinfo_dynamic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_6"
+                    android:text="24"
+                    android:textColor="@color/common_333333"
+                    android:textSize="@dimen/space_16" />
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/pieces_userinfo_dynamic"
+                layout="@layout/pieces_userinfo_dynamic" />
+
+            <View
+                style="@style/divider_line"
+                android:layout_marginLeft="@dimen/space_15" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:text="@string/userinfo_game"
+                    android:textColor="@color/common_333333"
+                    android:textSize="@dimen/space_16" />
+
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/pieces_userinfo_game"
+                layout="@layout/pieces_userinfo_game" />
+
+            <View
+                style="@style/divider_line"
+                android:layout_marginLeft="@dimen/space_15" />
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_15">
+
+                <TextView
+                    android:id="@+id/tv_personality_signature"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/userinfo_personality_signature"
+                    android:textColor="@color/common_333333"
+                    android:textSize="@dimen/space_16" />
+
+                <TextView
+                    android:id="@+id/tv_personality_signature_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_personality_signature"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:text="个性签名内容"
+                    android:textColor="@color/common_666666"
+                    android:textSize="@dimen/space_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_arrow_right" />
+            </RelativeLayout>
+
+            <View
+                style="@style/divider_line"
+                android:layout_marginLeft="@dimen/space_15" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:text="@string/userinfo_often_play"
+                    android:textColor="@color/common_333333"
+                    android:textSize="@dimen/space_16" />
+
+                <TextView
+                    android:id="@+id/tv_userinfo_often_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_6"
+                    android:text="24"
+                    android:textColor="@color/common_333333"
+                    android:textSize="@dimen/space_16" />
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/pieces_userinfo_ofen_play"
+                layout="@layout/pieces_userinfo_ofen_play" />
+
+            <View
+                style="@style/divider_line"
+                android:layout_marginLeft="@dimen/space_15" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:text="@string/userinfo_gift"
+                    android:textColor="@color/common_333333"
+                    android:textSize="@dimen/space_16" />
+
+                <TextView
+                    android:id="@+id/tv_userinfo_gift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_6"
+                    android:text="10"
+                    android:textColor="@color/common_333333"
+                    android:textSize="@dimen/space_16" />
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/pieces_userinfo_gift"
+                layout="@layout/pieces_userinfo_gift" />
+
+            <RelativeLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/space_200"
+                android:background="#5f999999"></RelativeLayout>
+
+        </LinearLayout>
+    </com.weile.casualgames.view.widget.DropZoomScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/space_205">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="60dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginTop="@dimen/space_35"
+                android:src="@mipmap/userinfo_but_back" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_32"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/iv_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_15"
+            android:src="@mipmap/userinfo_ade_attention" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_15"
+            android:layout_toRightOf="@id/iv_attention"
+            android:src="@mipmap/userinfo_more" />
+
+    </RelativeLayout>
+</FrameLayout>

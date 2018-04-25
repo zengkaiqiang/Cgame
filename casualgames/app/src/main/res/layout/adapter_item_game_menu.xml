@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/iv_game_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:src="@mipmap/ic_game_rank">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_game_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_menu_rank"
+        android:textSize="@dimen/text_size_13"
+        android:singleLine="true"
+        android:textColor="@color/main_bottom_text_normal_bg"
+        android:layout_marginTop="@dimen/space_5"
+        >
+    </TextView>
+
+</LinearLayout>

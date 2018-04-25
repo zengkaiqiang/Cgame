@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_matching"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical"
+    tools:context="com.weile.casualgames.matching.MatchingFragment">
+
+               <!--<com.weile.casualgames.view.widget.radarscan.RadarView
+                    android:id="@id/id_scan_circle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>-->
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/space_50"
+            android:id="@+id/rl_waveview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.weile.casualgames.matching.view.WaveView
+            android:id="@+id/wave_view"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_centerHorizontal="true">
+        </com.weile.casualgames.matching.view.WaveView>
+        <com.weile.casualgames.view.widget.RoundImageView
+            android:id="@+id/iv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/face"></com.weile.casualgames.view.widget.RoundImageView>
+
+                <!--<com.weile.casualgames.view.widget.radarscan.RadarViewGroup-->
+                    <!--android:id="@+id/radarViewGroup"-->
+                    <!--android:layout_width="300dp"-->
+                    <!--android:layout_height="300dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--&gt;-->
+                <!--</com.weile.casualgames.view.widget.radarscan.RadarViewGroup>-->
+                <com.weile.casualgames.view.widget.RoundImageView
+                    android:id="@+id/iv_header1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_210"
+                    android:layout_marginTop="@dimen/space_250"
+                    android:src="@mipmap/userinfo_head"
+                    android:visibility="gone"></com.weile.casualgames.view.widget.RoundImageView>
+
+                <com.weile.casualgames.view.widget.RoundImageView
+                    android:id="@+id/iv_header2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_80"
+                    android:layout_marginTop="@dimen/space_210"
+                    android:src="@mipmap/userinfo_head"
+                    android:visibility="gone"></com.weile.casualgames.view.widget.RoundImageView>
+
+                <com.weile.casualgames.view.widget.RoundImageView
+                    android:id="@+id/iv_header3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="150dp"
+                    android:src="@mipmap/userinfo_head"
+                    android:visibility="gone"></com.weile.casualgames.view.widget.RoundImageView>
+
+                <com.weile.casualgames.view.widget.RoundImageView
+                    android:id="@+id/iv_header4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_80"
+                    android:layout_marginTop="70dp"
+                    android:src="@mipmap/userinfo_head"
+                    android:visibility="gone"></com.weile.casualgames.view.widget.RoundImageView>
+        </RelativeLayout>
+
+
+
+        <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_20"
+    android:textColor="@color/game_user_name_text"
+    android:textSize="@dimen/text_size_17"
+    android:text="@string/matching_pressed_tips"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/space_50"/>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 实心 -->
+    <solid android:color="@color/flower_bg_color"/>
+
+    <!-- 圆角 -->
+    <corners
+        android:topLeftRadius="0dp"
+        android:topRightRadius="360dp"
+        android:bottomLeftRadius="0dp"
+        android:bottomRightRadius="360dp"
+        />
+    <!-- 边距 -->
+    <padding
+        android:top="2dp"
+        android:bottom="2dp"
+        android:left="6dp"
+        android:right="6dp"/>
+
+</shape>

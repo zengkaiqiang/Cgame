@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_666666"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:text="取消"
+                android:layout_alignParentLeft="true"
+                android:textSize="18sp"
+                android:textColor="#4a8ff8"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:text="确定"
+                android:layout_alignParentRight="true"
+                android:textSize="18sp"
+                android:textColor="@color/popup_window_select"
+                android:gravity="center"
+                />
+            <EditText
+                android:id="@+id/edt_city_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/btn_cancel"
+                android:layout_toLeftOf="@id/btn_confirm"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:hint="请输入省、市、区(县)"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.weile.casualgames.view.widget.rollpopupwindow.utils.WheelView
+                android:id="@+id/id_province"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+            </com.weile.casualgames.view.widget.rollpopupwindow.utils.WheelView>
+
+            <com.weile.casualgames.view.widget.rollpopupwindow.utils.WheelView
+                android:id="@+id/id_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.weile.casualgames.view.widget.rollpopupwindow.utils.WheelView
+                android:id="@+id/id_district"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+            </com.weile.casualgames.view.widget.rollpopupwindow.utils.WheelView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
