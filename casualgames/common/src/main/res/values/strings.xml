@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">comon</string>
-    <!-- error -->
-    <string name="component_dockbar_null_intent">数据异常</string>
-    <string name="component_activity_not_found">您的手机上未安装应用程序。</string>
-    <string name="connectionerror">服务器出现异常</string>
-</resources>
